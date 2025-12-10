@@ -500,9 +500,10 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 
 ## 👤 Geliştirici Bilgileri
 
-**Geliştirici**: Mehmet Karataş
+**Geliştirici**: Mehmet Karataşlar  
 **E-posta**: mehmetkarataslar@gmail.com  
-**Proje**: C# Temelleri, Reflection ve ASP.NET Core Web API Entegrasyonu
+**Proje**: C# Temelleri, Reflection ve ASP.NET Core Web API Entegrasyonu  
+**Tarih**: 10.12.2025
 
 ## 🙏 Teşekkürler
 

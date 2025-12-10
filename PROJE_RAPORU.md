@@ -3,7 +3,7 @@
 
 **Geliştirici:** Mehmet Karataşlar  
 **E-posta:** mehmetkarataslar@gmail.com  
-**Tarih:** 2024
+**Tarih:** 10.12.2025
 
 ---
 
@@ -545,5 +545,5 @@ Bu proje, modern yazılım geliştirme tekniklerini öğrenmek ve uygulamak içi
 ---
 
 **Rapor Hazırlayan:** Mehmet Karataşlar  
-**Tarih:** 2024
+**Tarih:** 10.12.2025
 
