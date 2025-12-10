@@ -544,6 +544,6 @@ Bu proje, modern yazılım geliştirme tekniklerini öğrenmek ve uygulamak içi
 
 ---
 
-**Rapor Hazırlayan:** Mehmet Karataşlar  
+**Rapor Hazırlayan:** Mehmet Karataş  
 **Tarih:** 10.12.2025
 
