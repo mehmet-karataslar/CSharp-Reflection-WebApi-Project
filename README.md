@@ -163,11 +163,21 @@ Uygulama açıldığında 4 sekme görürsünüz:
 
 1. **Struct ve Değer Tipleri**: "Öğrencileri Göster" butonuna tıklayarak struct örneklerini görüntüleyin.
 
+![Struct ve Değer Tipleri](EkranGoruntuleri/1.%20Struct%20ve%20Değer%20Tipleri.png)
+
 2. **Exception Handling**: İki sayı girin ve "Bölme İşlemi Yap" butonuna tıklayın. Sıfıra bölme veya geçersiz format hatalarını test edin.
+
+![Exception Handling](EkranGoruntuleri/2.%20Exception%20Handling.png)
 
 3. **Obsolete Attribute**: Eski ve yeni metotları test edin. Eski metot çağrısında uyarı göreceksiniz.
 
+![Obsolete Attribute - Eski Metot](EkranGoruntuleri/3.%20Obsolete%20AttributeEski.png)
+![Obsolete Attribute - Yeni Metot](EkranGoruntuleri/3.%20Obsolete%20AttributeYeni.png)
+
 4. **Reflection Raporu**: "Reflection Raporu Oluştur" butonuna tıklayarak custom attribute'ları ve metot bilgilerini görüntüleyin.
+
+![Reflection Raporu - Bölüm 1](EkranGoruntuleri/4.%20Reflection%20Raporu.png)
+![Reflection Raporu - Bölüm 2](EkranGoruntuleri/4.%20Reflection%20RaporuDevami.png)
 
 ### Web API Kullanımı
 
@@ -205,6 +215,10 @@ DELETE https://localhost:5001/api/products/1
 ```http
 GET https://localhost:5001/api/system/attribute-map
 ```
+
+**Web API - Middleware ve Filter Logları:**
+
+![Web API - Middleware ve Filter Logları](EkranGoruntuleri/WebApi.png)
 
 ## 📚 Proje Bileşenleri
 
@@ -486,7 +500,7 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 
 ## 👤 Geliştirici Bilgileri
 
-**Geliştirici**: Mehmet Karataşlar  
+**Geliştirici**: Mehmet Karataş
 **E-posta**: mehmetkarataslar@gmail.com  
 **Proje**: C# Temelleri, Reflection ve ASP.NET Core Web API Entegrasyonu
 
