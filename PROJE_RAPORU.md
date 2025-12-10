@@ -38,7 +38,9 @@ public struct Student
 
 **Açıklama:** Bu struct, öğrenci bilgilerini temsil eder. Windows Forms uygulamasında, bu struct'tan oluşturulan örnekler bir ListBox içinde gösterilir. Struct'ların değer tipi olması nedeniyle, her öğrenci bağımsız bir kopya olarak saklanır. Bu, referans tiplerinden (class) farklıdır çünkü struct'lar kopyalandığında yeni bir örnek oluşturulur, referans değil.
 
-**Ekran Görüntüsü:** [Buraya Windows Forms uygulamasının "Struct ve Değer Tipleri" sekmesinin ekran görüntüsü eklenecek]
+**Ekran Görüntüsü:**
+
+![Struct ve Değer Tipleri](EkranGoruntuleri/1.%20Struct%20ve%20Değer%20Tipleri.png)
 
 ---
 
@@ -80,10 +82,9 @@ finally
 
 **Açıklama:** Bu kod bloğu, kullanıcıdan alınan iki sayıyı bölme işlemine tabi tutar. `DivideByZeroException`, sıfıra bölme durumunda yakalanır. `FormatException`, kullanıcının sayı yerine harf veya geçersiz karakter girmesi durumunda yakalanır. `finally` bloğu, hata olsun ya da olmasın her durumda çalışır ve bu sayede kaynak temizleme veya loglama işlemleri garanti altına alınır. Windows Forms arayüzünde, hata durumları kırmızı renkte, başarılı işlemler yeşil renkte gösterilir.
 
-**Ekran Görüntüleri:**
-- [Buraya FormatException hatası ekran görüntüsü eklenecek]
-- [Buraya DivideByZeroException hatası ekran görüntüsü eklenecek]
-- [Buraya başarılı işlem ekran görüntüsü eklenecek]
+**Ekran Görüntüsü:**
+
+![Exception Handling](EkranGoruntuleri/2.%20Exception%20Handling.png)
 
 ---
 
@@ -116,6 +117,12 @@ public class ObsoleteExample
 ```
 
 **Açıklama:** İlk metot (`EskiMetot`), `[Obsolete(..., false)]` ile işaretlenmiştir. Bu, derleme sırasında sadece bir uyarı (warning) verir ancak kod çalışmaya devam eder. İkinci metot (`CokEskiMetot`), `[Obsolete(..., true)]` ile işaretlenmiştir ve bu durumda derleme hatası (error) verir. Bu nedenle bu metot yorum satırına alınmıştır. Bu yaklaşım, eski API'lerin kademeli olarak kaldırılması için kullanılır.
+
+**Ekran Görüntüleri:**
+
+![Obsolete Attribute - Eski Metot](EkranGoruntuleri/3.%20Obsolete%20AttributeEski.png)
+
+![Obsolete Attribute - Yeni Metot](EkranGoruntuleri/3.%20Obsolete%20AttributeYeni.png)
 
 ---
 
@@ -190,7 +197,11 @@ foreach (MethodInfo method in methods)
 
 **Açıklama:** Bu kod, `ExampleClass` tipini analiz eder. `Type.GetType()` veya `typeof()` kullanılarak tip bilgisi alınır. `GetCustomAttributes()` metodu ile sınıf ve metotlar üzerindeki custom attribute'lar okunur. `GetMethods()` ile tüm public metotlar listelenir. Reflection sayesinde, derleme zamanında bilinmeyen tip bilgilerine runtime'da erişilebilir. Bu özellik, dinamik kod analizi, serialization, ve framework geliştirme gibi alanlarda kritik öneme sahiptir.
 
-**Ekran Görüntüsü:** [Buraya Windows Forms uygulamasının "Reflection Raporu" sekmesinin ekran görüntüsü eklenecek - RichTextBox'ta gösterilen detaylı attribute raporu]
+**Ekran Görüntüleri:**
+
+![Reflection Raporu - Bölüm 1](EkranGoruntuleri/4.%20Reflection%20Raporu.png)
+
+![Reflection Raporu - Bölüm 2](EkranGoruntuleri/4.%20Reflection%20RaporuDevami.png)
 
 ---
 
@@ -247,8 +258,6 @@ public class RequestLoggingMiddleware
 app.UseMiddleware<RequestLoggingMiddleware>();
 ```
 
-**Ekran Görüntüsü:** [Buraya API çalıştığında konsola düşen middleware loglarının ekran görüntüsü eklenecek]
-
 ---
 
 ### 4.2. Action Filter (PerformanceActionFilter)
@@ -298,7 +307,9 @@ builder.Services.AddControllers(options =>
 });
 ```
 
-**Ekran Görüntüsü:** [Buraya API çalıştığında konsola düşen performance filter loglarının ekran görüntüsü eklenecek]
+**Ekran Görüntüsü - Middleware ve Filter Logları:**
+
+![Web API - Middleware ve Filter Logları](EkranGoruntuleri/WebApi.png)
 
 ---
 
@@ -435,6 +446,8 @@ public ActionResult<Dictionary<string, object>> GetAttributeMap()
 
 **Endpoint:** `GET /api/system/attribute-map`
 
+**Ekran Görüntüsü:** WebApi.png görselinde middleware logları ve JSON yanıtı birlikte görüntülenmektedir.
+
 **JSON Yanıt Örneği:**
 
 ```json
@@ -508,7 +521,7 @@ public ActionResult<Dictionary<string, object>> GetAttributeMap()
 }
 ```
 
-**Ekran Görüntüsü:** [Buraya Postman veya tarayıcıda `/api/system/attribute-map` endpoint'inden dönen JSON yanıtının ekran görüntüsü eklenecek]
+**Not:** WebApi.png görselinde, API'nin çalıştığı konsol ekranı ve middleware/filter logları görüntülenmektedir. JSON yanıtı için Postman veya tarayıcı kullanılabilir.
 
 ---
 
